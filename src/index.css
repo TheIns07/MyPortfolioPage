@@ -210,16 +210,86 @@ input, textarea{
   transition: all 400ms;
 }
 
-.home .myself-photo{
+
+.home img{
+  width: 150px;
+  height: 150px;
+  border-radius: 90%;
+  margin: 0 0 -2em 0;
+}
+
+.home h1 {
+  font-size: 50px;
+}
+
+.home .h1-main{
+  align-items: center;
+  justify-content: center;
+}
+
+.home strong:hover {
+  transition: all 300ms;
+  color: rgb(83, 144, 83);
+}
+
+.wrapper{
+  box-sizing: content-box;
+  height: 70px;
+  padding: 50px;
   display: flex;
-  justify-content: flex-end;
+  font-size: 45px;
+  font-weight: 600;
+  justify-content: left;
+}
+
+.home .main-section{
+  margin: auto;
+  display: inline-block;
+
+}
+
+.home .main-section h1{
   align-items: flex-end;
 }
 
-.home img{
-  width: 130px;
-  height: 130px;
-  display: flex;
-  border-radius: 100%;
-  margin: 0 0 0 -3rem;
+.wrapper .words{
+  overflow: hidden;
 }
+
+.wrapper span{
+  display: block;
+  height: 100%;
+  padding-left: 10px;
+  color:black;
+  animation: spin_words 6s infinite;
+  height: 70px;
+
+}
+
+.home .main-section .myself-photo{
+    margin-left: 0px;
+}
+
+@keyframes spin_words {
+  10%{
+    transform: translateY(-109%);
+  }
+  25%{
+    transform: translateY(-95%);
+  }
+  35%{
+    transform: translateY(-212%);
+  }
+  50%{
+    transform: translateY(-195%);
+  }
+  60%{
+    transform: translateY(-302%);
+  }
+  70%{
+    transform: translateY(-300%);
+  }
+}
+
+
+
